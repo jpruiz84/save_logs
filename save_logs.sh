@@ -22,4 +22,5 @@ cat /var/log/Xorg.0.log > logs_$1_xorg.txt
 ls -lah /sys/bus/platform/devices/ > logs_$1_devices.txt
 cat /sys/kernel/debug/tegra-host1x/devices > logs_$1_tegra-host1x.txt
 cat /sys/kernel/debug/tegra-host1x/status_all >> logs_$1_tegra-host1x.txt
+journalctl -b0 > logs_$1_journalctl.txt
 
