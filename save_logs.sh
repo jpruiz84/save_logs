@@ -24,4 +24,6 @@ cat /sys/kernel/debug/tegra-host1x/devices > logs_$1_tegra-host1x.txt
 cat /sys/kernel/debug/tegra-host1x/status_all >> logs_$1_tegra-host1x.txt
 journalctl -b0 > logs_$1_journalctl.txt
 zcat /proc/config.gz > logs_$1_kernel_configs.txt
+tree /sys > logs_$1_tree_sys.txt
+tree /etc > logs_$1_tree_etc.txt
 
