@@ -26,4 +26,5 @@ journalctl -b0 > logs_$1_journalctl.txt
 zcat /proc/config.gz > logs_$1_kernel_configs.txt
 tree /sys > logs_$1_tree_sys.txt
 tree /etc > logs_$1_tree_etc.txt
+env > logs_$1_env.txt
 
